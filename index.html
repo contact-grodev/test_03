@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand:400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/54c1824395.js" crossorigin="anonymous"></script>
+</head>
+<body class="flex__col fade_in">
+    <div class="overlay fade_out">
+        <div class="overlay_wrapper fade_out">
+            <div class="overlay_spinner fade_out"></div>
+        </div>
+    </div>
+    <header>
+        <div class="flex container__center">
+            <div class="logo">
+                <img src="./img/ohmyfood@2x.svg" alt="ohmyfood">
+            </div>
+        </div>
+    </header>
+    <!-- Barre de recherche -->
+    <div id="localization">
+        <div class="flex container__center">
+            <form action="" method="get">
+                <i class="fas fa-map-marker-alt"></i>
+                <input class="field" type="search" placeholder="Paris, Belleville"/>
+            </form>
+        </div>
+    </div>
+    <!-- Explorez -->
+    <section id="how_to">
+        <div class="container txt__center font__text">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <button class="button__explore font_weight__600">
+                    Explorez nos restaurants
+            </button>
+        </div>
+    </section>
+    <!-- Mode d'emploi -->
+    <section>
+        <div class="flex__col container txt__left font__text">
+            <h1 class="txt__left">
+                Fonctionnement
+            </h1>
+            <ul id="steps">
+                <li class="tiles">
+                    <div class="flex">
+                        <div class="badge badge__left badge_shape__round badge_color__primary">
+                            <div>1</div>
+                        </div>
+                        <i class="fas fa-mobile-alt ico"></i>
+                        <p class="font_weight__600 font_size__steps">Choisissez un restaurant</p>
+                    </div>
+                </li>
+                <li class="tiles">
+                    <div class="flex">
+                        <div class="badge badge__left badge_shape__round badge_color__primary">
+                            <div>2</div>
+                        </div>
+                        <i class="fas fa-list-ul ico"></i>
+                        <p class="font_weight__600 font_size__steps">Composez votre menu</p>
+                    </div>
+                </li>
+                <li id="enjoy" class="tiles">
+                    <div class="flex">
+                        <div class="badge badge__left badge_shape__round badge_color__primary">
+                            <div>3</div>
+                        </div>    
+                    <i id="shop_ico" class="fas fa-store ico"></i>
+                    <p class="font_weight__600 font_size__steps">Dégustez au restaurant</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Propositions -->
+    <section class="flex__col container txt__center font__text">
+        <h1 class="txt__left">
+            Restaurants
+        </h1>
+        <!-- Restaurant -->
+        <div class="tiles">
+            <a class="" href="./views/la_palette_du_gout.html">
+                <div class="badge badge_shape__square badge__top_right badge_color__green">Nouveau</div>
+                <img class="img width__100 object_fit__cover"
+                src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+                alt="La palette du goût" 
+                title="La palette du goût" />
+                <div class="flex__row space__between width__100">
+                    <div class="desc txt__left">
+                        <h2>La palette du goût</h2>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="heart__title change_icon">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="fas fa-heart fa-2x"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Restaurant -->
+        <div class="tiles">
+            <a class="" href="./views/la_note_enchantee.html">
+                <div class="badge badge_shape__square badge__top_right badge_color__green">Nouveau</div>
+                <img class="img width__100 object_fit__cover"
+                src="./img/stil-u2Lp8tXIcjw-unsplash.jpg" 
+                alt="La note enchantée" 
+                title="La note enchantée" />
+                <div class="flex__row space__between width__100">
+                    <div class="desc txt__left">
+                        <h2>La note enchantée</h2>
+                        <p>Charonne</p>
+                    </div>
+                    <div class="heart__title change_icon">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="fas fa-heart fa-2x"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Restaurant -->
+        <div class="tiles">
+            <a class="" href="./views/a_la_francaise.html">
+                <img class="img width__100 object_fit__cover"
+                src="./img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
+                alt="A la française" 
+                title="A la française" />
+                <div class="flex__row space__between width__100">
+                    <div class="desc txt__left">
+                        <h2>A la française</h2>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div class="heart__title change_icon">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="fas fa-heart fa-2x"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Restaurant -->
+        <div class="tiles">
+            <a class="" href="./views/le_delice_des_sens.html">
+                <img class="img width__100 object_fit__cover"
+                src="./img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
+                alt="Le délice des sens" 
+                title="Le délice des sens" />
+                <div class="flex__row space__between width__100">
+                    <div class="desc txt__left">
+                            <h2>Le délice des sens</h2>
+                        <p>Folie Méricourt</p>
+                    </div>
+                    <div class="heart__title change_icon">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="fas fa-heart fa-2x"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Menu pied de page -->
+    <footer id="footer">
+        <div class="flex container txt__left font__text">
+            <ul>
+                <li>
+                    <h2>ohmyfood</h2>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Proposer un restaurant"
+                    target="_self">
+                    <span><i class="fas fa-utensils ico"></i>Proposer un restaurant</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Devenir partenaire"
+                    target="_self">
+                    <span><i class="fas fa-hands-helping ico"></i>Devenir partenaire</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Mentions légales"
+                    target="_self">
+                    Mentions légales
+                    </a>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Contact"
+                    target="_self">
+                    Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
